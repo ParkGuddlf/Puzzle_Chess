@@ -141,6 +141,15 @@ public class BattleBoard : MonoBehaviour
                         Destroy(BishopAtk);
                         break;
                     case AtkType.Knight:
+                        GameObject KnightAtk = Instantiate(atkMotion[2], Vector3.zero, Quaternion.Euler(0, 0, -45));
+                        KnightAtk.GetComponent<PinAtk>().pinTag = atkList[i].transform.GetChild(0).tag;
+                        KnightAtk.transform.position = array.transform.position;
+                        yield return new WaitForSeconds(0.3f);
+                        //if (array.transform.childCount != 0 && atkList[i].transform.GetChild(0).tag != array.transform.GetChild(0).tag)//현재때리고있는 녀석의 적이면 플레이어만때리게 아니면 그반대
+                        //{
+                        //    array.transform.GetChild(0).GetComponent<MouseDrag>().hp -= 1;
+                        //}
+                        Destroy(KnightAtk);
                         break;
                     case AtkType.Queen:
                         break;

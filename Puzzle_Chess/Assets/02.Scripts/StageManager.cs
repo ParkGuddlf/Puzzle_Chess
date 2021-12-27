@@ -10,6 +10,8 @@ public class StageManager : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+        if (PlayerInfo.instance.stageNum > 0)
+            stageNum = PlayerInfo.instance.stageNum;
     }
     public int stageNum = 0;
     public bool enemyArrangeEnd = false;
@@ -17,6 +19,11 @@ public class StageManager : MonoBehaviour
     [SerializeField] GameObject[] enemyPrefab;
     //스타트턴에 적을 배치 단 배치는 비어있는 공간에 무작위로 배치한다
 
+    private void Start()
+    {
+        //playerinfo에 스테이지정보가 있으면 거기서부터 없으면 0부터
+
+    }
     private void Update()
     {
         EnemyArrange(stageNum);
@@ -39,13 +46,13 @@ public class StageManager : MonoBehaviour
     //보드의 빈공간에 스테이지에 맞는 적군배치
     void EmptyBorad()
     {
-        randNum.RemoveAll(T => T < 100);
+        randNum.Clear();
         RanNum();
         k = 0;
         for (int i = 0; i < BattleBoard.instance.board.Count; i++)
-        {            
+        {
             GameObject emptyBoardEnemy = BattleBoard.instance.board[randNum[i]];
-            GameObject enemy = Instantiate(enemyPrefab[Random.Range(0,2)], emptyBoardEnemy.transform);
+            GameObject enemy = Instantiate(enemyPrefab[Random.Range(0, 2)], emptyBoardEnemy.transform);
             BattleBoard.instance.enemyPinList.Add(enemy);
             enemy.GetComponent<MouseDrag>().currParent = emptyBoardEnemy.transform;
             k++;

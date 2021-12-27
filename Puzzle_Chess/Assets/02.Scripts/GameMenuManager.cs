@@ -14,6 +14,13 @@ public class GameMenuManager : MonoBehaviour
     {
         Loading.LoadScene("Title");
     }
+    public void GameOver()
+    {
+        PlayerInfo.Money += (StageManager.instance.stageNum * 50);
+        PlayerInfo.Dia += StageManager.instance.stageNum;
+        PlayerInfo.instance.SaveINGameMoney();
+        Loading.LoadScene("Title");
+    }
     public void Cancle()
     {
         MenuPanel.SetActive(false);

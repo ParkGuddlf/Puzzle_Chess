@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - nomal
   - Razer
+  - ScrollParent
   layers:
   - Default
   - TransparentFX

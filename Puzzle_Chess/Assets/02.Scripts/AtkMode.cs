@@ -97,6 +97,9 @@ public class AtkMode : MonoBehaviour
                 case AtkType.Bishop:
                     atkArray.Add(RazerSpawnPos);
                     break;
+                case AtkType.Knight:
+                    atkArray.Add(RazerSpawnPos);
+                    break;
             }
         }
     }

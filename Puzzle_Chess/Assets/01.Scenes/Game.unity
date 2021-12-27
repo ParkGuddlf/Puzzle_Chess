@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 78122182}
   - component: {fileID: 78122181}
   m_Layer: 9
-  m_Name: C 3
+  m_Name: D 3
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 86844861}
   - component: {fileID: 86844860}
   m_Layer: 9
-  m_Name: C 5
+  m_Name: F 5
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,7 +1145,7 @@ GameObject:
   - component: {fileID: 184353481}
   - component: {fileID: 184353480}
   m_Layer: 9
-  m_Name: C 1
+  m_Name: D 1
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1843,7 +1843,7 @@ GameObject:
   - component: {fileID: 231107753}
   - component: {fileID: 231107752}
   m_Layer: 9
-  m_Name: C 4
+  m_Name: F 4
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,10 +2212,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType:
-  - {fileID: 11400000, guid: 4135160e6135e5343bdc1a35c96582e0, type: 2}
-  - {fileID: 11400000, guid: e4f608fbc10287440aeed21e3ce9e338, type: 2}
-  - {fileID: 11400000, guid: 5f89b9219bd9db347a6d4e0b9df5ae17, type: 2}
-  - {fileID: 11400000, guid: ad44248d0b1cf9040b2c9974075caf8d, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currObjectType: {fileID: 0}
   inventory: {fileID: 1195809442}
   buyEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010,
@@ -2356,7 +2358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2529,7 +2531,7 @@ GameObject:
   - component: {fileID: 338022118}
   - component: {fileID: 338022117}
   m_Layer: 9
-  m_Name: C 3
+  m_Name: E 3
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3399,10 +3401,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType:
-  - {fileID: 11400000, guid: 4135160e6135e5343bdc1a35c96582e0, type: 2}
-  - {fileID: 11400000, guid: e4f608fbc10287440aeed21e3ce9e338, type: 2}
-  - {fileID: 11400000, guid: 5f89b9219bd9db347a6d4e0b9df5ae17, type: 2}
-  - {fileID: 11400000, guid: ad44248d0b1cf9040b2c9974075caf8d, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currObjectType: {fileID: 0}
   inventory: {fileID: 1195809442}
   buyEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010,
@@ -3490,7 +3494,7 @@ GameObject:
   - component: {fileID: 654228575}
   - component: {fileID: 654228574}
   m_Layer: 9
-  m_Name: C 2
+  m_Name: D 2
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3782,7 +3786,7 @@ GameObject:
   - component: {fileID: 675672071}
   - component: {fileID: 675672070}
   m_Layer: 9
-  m_Name: C 4
+  m_Name: E 4
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4328,7 +4332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4370,7 +4374,7 @@ GameObject:
   - component: {fileID: 760022160}
   - component: {fileID: 760022159}
   m_Layer: 9
-  m_Name: C 3
+  m_Name: F 3
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4550,7 +4554,7 @@ GameObject:
   - component: {fileID: 791691763}
   - component: {fileID: 791691762}
   m_Layer: 9
-  m_Name: C 5
+  m_Name: E 5
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5068,7 +5072,7 @@ GameObject:
   - component: {fileID: 974777594}
   - component: {fileID: 974777593}
   m_Layer: 9
-  m_Name: C 5
+  m_Name: D 5
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5405,7 +5409,7 @@ GameObject:
   - component: {fileID: 1031586351}
   - component: {fileID: 1031586350}
   m_Layer: 9
-  m_Name: C 4
+  m_Name: D 4
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6492,10 +6496,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType:
-  - {fileID: 11400000, guid: 4135160e6135e5343bdc1a35c96582e0, type: 2}
-  - {fileID: 11400000, guid: e4f608fbc10287440aeed21e3ce9e338, type: 2}
-  - {fileID: 11400000, guid: 5f89b9219bd9db347a6d4e0b9df5ae17, type: 2}
-  - {fileID: 11400000, guid: ad44248d0b1cf9040b2c9974075caf8d, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currObjectType: {fileID: 0}
   inventory: {fileID: 1195809442}
   buyEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010,
@@ -7173,7 +7179,7 @@ GameObject:
   - component: {fileID: 1356463292}
   - component: {fileID: 1356463291}
   m_Layer: 9
-  m_Name: C 2
+  m_Name: F 2
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7628,7 +7634,7 @@ GameObject:
   - component: {fileID: 1406309706}
   - component: {fileID: 1406309705}
   m_Layer: 9
-  m_Name: C 1
+  m_Name: E 1
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8149,10 +8155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType:
-  - {fileID: 11400000, guid: 4135160e6135e5343bdc1a35c96582e0, type: 2}
-  - {fileID: 11400000, guid: e4f608fbc10287440aeed21e3ce9e338, type: 2}
-  - {fileID: 11400000, guid: 5f89b9219bd9db347a6d4e0b9df5ae17, type: 2}
-  - {fileID: 11400000, guid: ad44248d0b1cf9040b2c9974075caf8d, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currObjectType: {fileID: 0}
   inventory: {fileID: 1195809442}
   buyEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010,
@@ -8426,7 +8434,7 @@ GameObject:
   - component: {fileID: 1532352294}
   - component: {fileID: 1532352293}
   m_Layer: 9
-  m_Name: C 1
+  m_Name: F 1
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9271,7 +9279,7 @@ GameObject:
   - component: {fileID: 1764924931}
   - component: {fileID: 1764924930}
   m_Layer: 9
-  m_Name: C 2
+  m_Name: E 2
   m_TagString: Case
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9696,7 +9704,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1985743777}
-        m_MethodName: GoTitle
+        m_MethodName: GameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9719,7 +9727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23166609, g: 0.31114793, b: 0.3584906, a: 0.68235296}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

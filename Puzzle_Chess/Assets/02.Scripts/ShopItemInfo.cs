@@ -11,6 +11,16 @@ public class ShopItemInfo : MonoBehaviour
     public ObjectType currObjectType;
     [SerializeField] GameObject inventory;
     [SerializeField] GameObject buyEffect;
+
+    private void Awake()
+    {
+        //반복문으로 돌려서 집어넣는다
+        for (int i = 0; i < PlayerInfo.instance.pinobjectTypes.Count; i++)
+        {
+            objectType[i] = PlayerInfo.instance.pinobjectTypes[i];
+        }        
+    }
+
     private void Start()
     {
         currObjectType = objectType[Random.Range(0, GameManager.Level)];

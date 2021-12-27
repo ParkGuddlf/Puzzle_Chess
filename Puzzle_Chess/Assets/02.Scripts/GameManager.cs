@@ -31,11 +31,28 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
             instance = this;
-        life = 10;
-        level = 1;
-        exp = 0;
-        currExp = 0;
-        money = 0;
+        soundSlider.value = PlayerInfo.instance.sound;
+    }
+    private void Start()
+    {
+        //저장정보가 있으면 저장정보에 따라 불러오고 아니면 처음부터 불러온다
+        switch (PlayerInfo.instance.life)
+        {
+            case 0:
+                life = 10;
+                level = 1;
+                currExp = 0;
+                money = 0;
+                break;
+            default:
+                life = PlayerInfo.instance.life;
+                level = PlayerInfo.instance.level;
+                currExp = PlayerInfo.instance.exp;
+                money = PlayerInfo.instance.gold;
+                
+                break;
+        }
+
     }
 
     void Update()
@@ -50,7 +67,7 @@ public class GameManager : MonoBehaviour
         moneyText.text = "GOLD : " + money;
         lifeTextBar.text = "LIFE : " + life;
         stageText.text = "Stage " + StageManager.instance.stageNum;
-        if(TurnManager.instance.stateCur != StateCur.battle)
+        if (TurnManager.instance.stateCur != StateCur.battle)
             stageTextBar.text = "Stage " + StageManager.instance.stageNum;
 
     }
@@ -72,7 +89,7 @@ public class GameManager : MonoBehaviour
                 exp = 32;
                 break;
         }
-        if(currExp == exp)
+        if (currExp == exp)
         {
             level++;
             currExp = 0;
@@ -80,7 +97,13 @@ public class GameManager : MonoBehaviour
     }
     public void Sound(AudioSource ads)
     {
+        
         ads.volume = soundSlider.value;
+        if(ads.volume != PlayerInfo.instance.sound)
+        {
+            PlayerInfo.instance.sound = ads.volume;
+            PlayerInfo.instance.GameSystemInfo();
+        }
     }
 
     //엔드턴은 체력관리와 게임오버판단
@@ -107,20 +130,21 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             //메인턴은 기물합성 구매 배치
-            case StateCur.main:                
+            case StateCur.main:
                 if (BattleBoard.instance.enemyPinList.Count == 0)
                     TurnManager.instance.stateCur = StateCur.end;
                 break;
             case StateCur.battle:
-                if(BattleBoard.battleStart == false)
+                if (BattleBoard.battleStart == false)
                     BattleBoard.instance.BattelPage();
                 if (BattleBoard.instance.enemyPinList.Count == 0)
-                    TurnManager.instance.stateCur = StateCur.end;               
+                    TurnManager.instance.stateCur = StateCur.end;
                 break;
             case StateCur.end:
                 stageTextBar.transform.parent.gameObject.SetActive(false);
+                GameinfoSave();
                 //공격이 끝나면 넘어간다
-                if (BattleBoard.battleEnd == true)
+                if (BattleBoard.battleEnd == true && InventoryManager.isSave)
                     TurnManager.instance.stateCur = StateCur.start;
                 break;
         }
@@ -130,5 +154,15 @@ public class GameManager : MonoBehaviour
     {
         if (TurnManager.instance.stateCur == StateCur.main)
             TurnManager.instance.stateCur = StateCur.battleReady;
+    }
+    //Save목록
+    void GameinfoSave()
+    {
+        PlayerInfo.instance.stageNum = StageManager.instance.stageNum;
+        PlayerInfo.instance.level = level;
+        PlayerInfo.instance.gold = money;
+        PlayerInfo.instance.exp = currExp;
+        PlayerInfo.instance.life = life;
+        PlayerInfo.instance.GameManegerSave();
     }
 }
