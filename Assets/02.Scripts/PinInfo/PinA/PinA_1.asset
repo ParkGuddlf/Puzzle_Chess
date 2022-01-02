@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a295b06a60291a40adf2b56b004e8dc, type: 3}
+  m_Name: PinA_1
+  m_EditorClassIdentifier: 
+  pinName: PinA
+  price: 1
+  pinSprite: {fileID: -1564321005969747037, guid: ba1c7c121c0cab247a354c3f05c95b0c,
+    type: 3}
+  pinBoardSprite: {fileID: 2166901547369749282, guid: c95969896dfb7314fa5e4daf2c142673,
+    type: 3}
+  atkType: 0
+  pinPrefab: {fileID: 3760628289979888409, guid: 05a4db7269df372498922d40722f4be1,
+    type: 3}
+  atkArrow: {fileID: -4339037822015418788, guid: c95969896dfb7314fa5e4daf2c142673,
+    type: 3}
+  hp: 1

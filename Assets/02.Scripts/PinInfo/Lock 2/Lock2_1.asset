@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a295b06a60291a40adf2b56b004e8dc, type: 3}
+  m_Name: Lock2_1
+  m_EditorClassIdentifier: 
+  pinName: Lock
+  price: 4
+  pinSprite: {fileID: -5654079486845140642, guid: 59b396d8fe8594444a39f5bd828bed97,
+    type: 3}
+  pinBoardSprite: {fileID: 2218115250435327636, guid: c95969896dfb7314fa5e4daf2c142673,
+    type: 3}
+  atkType: 5
+  pinPrefab: {fileID: 3760628289979888409, guid: 05a4db7269df372498922d40722f4be1,
+    type: 3}
+  atkArrow: {fileID: -7085349935651232819, guid: c95969896dfb7314fa5e4daf2c142673,
+    type: 3}
+  hp: 2
